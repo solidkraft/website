@@ -1,0 +1,45 @@
+.logo-animation {
+  background-color: yellow;
+  height: 8.3rem;
+  position: relative;
+  top: 7.8rem;
+  width: 100%;
+}
+.our-academy header {
+  position: relative;
+  height: 45%;
+}
+.header-academy-text p {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+  padding: 0 3rem;
+  position: relative;
+  top: 10rem;
+}
+.our-academy main {
+  background-color: #FFF;
+  height: 40%;
+}
+.our-academy main p {
+  color: #21252C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 33px;
+  padding: 3rem 3rem 0 3rem;
+}
+#blue-button {
+  background-color: #21252C;
+  color: white;
+  float: right;
+  margin-right: 3.5rem;
+  position: static;
+}
+#blue-button a {
+  color: #FFF;
+}
