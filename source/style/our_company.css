@@ -1,0 +1,82 @@
+.company-background {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.right-background {
+  height: 100%;
+  margin-right: 50%;
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+}
+.left-background {
+  background-color: white;
+  height: 100%;
+  margin-left: 50%;
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+}
+#image-company {
+  position: absolute;
+  right: 0;
+  top: 12.5rem;
+  z-index: 2;
+}
+#image-company img, #b img {
+  height: auto;
+  width: 21rem;
+}
+#text-company{
+  background-color: rgba(54, 54, 54, 0.95);
+  margin-right: 3rem;
+  position: absolute;
+  top: 17.8rem;
+  z-index: 3;
+}
+#text-company p {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.8em;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+#text-company h1 {
+  color: #FFF;
+  border-bottom: 3px solid #FFF;
+  font-family: 'Cabin';
+  font-size: 3.4em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0 3rem;
+  padding: 1rem 3rem;
+}
+.join-us {
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 8.3rem;
+  justify-content: center;
+  left: 15%;
+  position: absolute;
+  top: 50rem;
+  width: 8.3rem;
+  z-index: 3;
+}
+.join-us a {
+  color: #21252C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  line-height: 1.8em;
+  text-decoration: none;
+}
