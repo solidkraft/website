@@ -1,0 +1,54 @@
+.services {
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  width: 100%;
+}
+.services > section {
+  display: inline-block;
+  scroll-snap-align: center;
+}
+.services-slider {
+  background-color: #FFF;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.slider-text {
+  margin-right: 3rem;
+  padding: 3rem;
+  white-space: normal;
+}
+.slider-text p {
+  font-family: 'Cabin';
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+}
+.slider-text p:first-child {
+  border-bottom: 2px solid #000;
+  font-family: 'Cabin';
+  margin-right: 10rem;
+  font-size: 2.2em;
+  font-style: normal;
+  font-weight: normal;
+  padding-bottom: 0.4rem;
+}
+.blue-background {
+  background-color: #21252C;
+}
+.blue-background p {
+  color: #FFF!important;
+}
+.blue-background p:first-child {
+  border-color: white;
+}
+.image-animation {
+  background-color: yellow;
+  height: 50%;
+  margin: 3rem;
+}
+.hide {
+  visibility: hidden;
+}
