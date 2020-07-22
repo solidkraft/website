@@ -1,0 +1,70 @@
+.background {
+  height: 100%;
+  display: grid;
+  background-color: #292D33;
+  grid-auto-rows: 100%;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+.background > div {
+  background-color: #21252C;
+  position: relative;
+}
+.footer {
+  height: 100%;
+}
+.link, .footer-logo, .footer footer {
+  position: absolute;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  margin: 15rem 0;
+  width: 100%;
+}
+.explore ul, .social-media ul {
+  margin: 1.5rem;
+  padding: 0;
+}
+.explore li, .social-media li {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+.explore a, .social-media a {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+.social-media h1, .social-media li {
+  text-align: right;
+}
+.explore h1, .social-media h1 {
+  color: #FFF;
+  font-family: 'Cabin';
+  font-size: 2.2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 3rem 1.5rem;
+}
+.footer-logo {
+  background-color: yellow;
+  bottom: 12.5rem;
+  height: 6rem;
+  width: 100%;
+}
+.footer footer {
+  color: #FFF;
+  bottom: 0;
+  font-family: 'Cabin';
+  font-size: 1.5em;
+  font-style: normal;
+  line-height: 1.2em;
+  text-align: center;
+  width: 100%;
+}
