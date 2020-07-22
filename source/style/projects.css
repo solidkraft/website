@@ -1,0 +1,106 @@
+.projects {
+  height: 100%;
+}
+.background-projects {
+  height: 100%;
+  display: grid;
+  background-color: #292D33;
+  grid-auto-rows: 100%;
+  grid-gap: 2px;
+  grid-template-columns: auto auto auto auto;
+  position: relative;
+}
+.background-projects > div {
+  background-color: #21252C;
+  position: relative;
+}
+.projects-graphics, .projects-text {
+  position: absolute;
+}
+.projects-graphics {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  justify-content: space-between;
+  margin-top: 7rem;
+  width: 100%;
+}
+.circle-project h1 {
+  border-bottom: 5px solid #FFF;
+  color: #FFF;
+  font-family: 'Cabin';
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+.circle-project > div {
+  background-color: #FFF;
+  border-radius: 50%;
+  height: auto;
+  margin: 2rem 3rem;
+  text-align: center;
+  width: 4rem;
+}
+.circle-project > div > p {
+  color: #000;
+  font-family: 'Cabin';
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 1rem 0;
+}
+.project-bar {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+.project-bar > div {
+  background-color: #DE3C4B;
+  height: 14.6rem;
+  margin-left: 0.5rem;
+  width: 3rem;
+}
+.bar2 {
+  margin-top: 6rem;
+}
+.bar3 {
+  margin-top: 3rem;
+}
+.bar4 {
+  margin-top: 9rem;
+}
+.bar5 {
+  margin-top: 12rem;
+}
+.projects-text {
+  background-color: #FFF;
+  bottom: 6.8rem;
+  right: 0;
+  width: 25rem;
+}
+.projects-text h1 {
+  color: #000;
+  font-family: 'Cabin';
+  font-size: 2.2em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 1.8rem 0 0 0;
+  padding: 0 3rem;
+}
+.projects-text p {
+  color: #21252C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.8em;
+  margin-right: 2rem;
+  padding: 1rem 2.3rem;
+}
