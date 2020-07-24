@@ -1,0 +1,16 @@
+html, body {
+  background-color: #21252C;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  overflow y: scroll;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+  width: 100%;
+}
+section {
+  height: 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  position: relative;
+}
