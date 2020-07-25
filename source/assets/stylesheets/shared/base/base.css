@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(.5em + 1vw);
+}
+
+html,
+body,
+section {
+  padding: 0 3rem;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+header, footer {
+  max-width: 100vw;
+}
+
+body * + * {
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+header,
+footer,
+section {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFF;
+  color: rgba(0, 0, 0, .9);
+}
