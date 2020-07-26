@@ -1,18 +1,8 @@
 .projects {
   height: 100%;
 }
-.background-projects {
-  height: 100%;
-  display: grid;
-  background-color: #292D33;
-  grid-auto-rows: 100%;
-  grid-gap: 2px;
+.projects .background {
   grid-template-columns: auto auto auto auto;
-  position: relative;
-}
-.background-projects > div {
-  background-color: #21252C;
-  position: relative;
 }
 .projects-graphics, .projects-text {
   position: absolute;
@@ -22,7 +12,7 @@
   flex-direction: row;
   height: 60%;
   justify-content: space-between;
-  margin-top: 7rem;
+  margin-top: 10rem;
   width: 100%;
 }
 .circle-project h1 {
@@ -36,15 +26,19 @@
   margin: 0;
   padding-bottom: 0.5rem;
 }
-.circle-project > div {
+.circle-project div {
   background-color: #FFF;
   border-radius: 50%;
+  cursor: pointer;
   height: auto;
-  margin: 2rem 3rem;
+  margin: 3rem;
   text-align: center;
   width: 4rem;
 }
-.circle-project > div > p {
+.circle-project > a {
+  text-decoration: none;
+}
+.circle-project > a > div > p {
   color: #000;
   font-family: 'Cabin';
   font-size: 1.6em;
@@ -58,13 +52,13 @@
   display: flex;
   flex-direction: row;
   margin-right: 3rem;
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 .project-bar > div {
   background-color: #DE3C4B;
-  height: 14.6rem;
+  height: 17rem;
   margin-left: 0.5rem;
-  width: 3rem;
+  width: 3.5rem;
 }
 .bar2 {
   margin-top: 6rem;
@@ -80,7 +74,7 @@
 }
 .projects-text {
   background-color: #FFF;
-  bottom: 6.8rem;
+  bottom: 8rem;
   right: 0;
   width: 25rem;
 }
@@ -103,4 +97,51 @@
   line-height: 1.8em;
   margin-right: 2rem;
   padding: 1rem 2.3rem;
+}
+.number-desktop {
+  display: none;
+}
+@media screen and (min-width: 50rem) {
+  .projects-graphics {
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 6.5rem;
+    width: 70%;
+  }
+  .circle-project {
+    background-color: #FFF;
+    height: 32rem;
+    margin-left: 3rem;
+    margin-top: 0;
+  }
+  .circle-project h1 {
+    color: #000;
+    border-color: #000;
+    margin: 3rem 7rem 3rem 0;
+  }
+  .circle-project > a > div {
+    border-radius: 0;
+    width: 15rem;
+    margin: 0rem;
+  }
+  .circle-project > a > div:hover p {
+    color: #DE3C4B;
+    text-decoration: underline;
+  }
+  .number {
+    display: none;
+  }
+  .number-desktop {
+    display: block;
+  }
+  .project-bar {
+    margin: 0 2.5rem;
+  }
+  .project-bar > div {
+    height: 15rem;
+  }
+  .projects-text {
+    bottom: 3rem;
+    right: 2rem;
+  }
 }
