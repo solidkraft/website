@@ -6,7 +6,6 @@
 }
 .right-background {
   height: 100%;
-  margin-right: 50%;
   position: absolute;
   width: 50%;
   z-index: 2;
@@ -19,24 +18,24 @@
   width: 50%;
   z-index: 1;
 }
-#image-company {
+.image-company {
   position: absolute;
   right: 0;
-  top: 12.5rem;
+  top: 12rem;
   z-index: 2;
 }
-#image-company img, #b img {
+.image-company img {
   height: auto;
-  width: 21rem;
+  width: 22rem;
 }
-#text-company{
+.text-company {
   background-color: rgba(54, 54, 54, 0.95);
   margin-right: 3rem;
   position: absolute;
-  top: 17.8rem;
+  top: 16rem;
   z-index: 3;
 }
-#text-company p {
+.text-company p {
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3em;
@@ -46,7 +45,7 @@
   margin-left: 3rem;
   margin-right: 3rem;
 }
-#text-company h1 {
+.text-company h1 {
   color: #FFF;
   border-bottom: 3px solid #FFF;
   font-family: 'Cabin';
@@ -79,4 +78,36 @@
   letter-spacing: -0.03em;
   line-height: 1.8em;
   text-decoration: none;
+}
+@media screen and (min-width: 50rem) {
+  .right-backgorund {
+    width: 30rem;
+  }
+  .left-background {
+    margin-left: 30%;
+    width: 70%;
+  }
+  .image-company {
+    margin: 5rem 20rem;
+    top: 5rem;
+  }
+  .image-company img {
+    width: 35rem;
+  }
+  .text-company {
+    margin-left: 10rem;
+    margin-right: 22rem;
+    top: 8rem;
+  }
+  .text-company h1 {
+    margin: 0 15rem 2rem 3rem;
+    padding: 2rem 0;
+  }
+  .text-company p {
+    margin-right: 6rem;
+    padding-bottom: 2rem;
+  }
+  .join-us {
+    display: none;
+  }
 }
