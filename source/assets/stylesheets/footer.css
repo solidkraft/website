@@ -1,17 +1,3 @@
-.background {
-  height: 100%;
-  display: grid;
-  background-color: #292D33;
-  grid-auto-rows: 100%;
-  grid-gap: 2px;
-  grid-template-columns: 1fr 2fr 1fr;
-  position: relative;
-  z-index: 1;
-}
-.background > div {
-  background-color: #21252C;
-  position: relative;
-}
 .footer {
   height: 100%;
 }
@@ -54,7 +40,7 @@
 }
 .footer-logo {
   background-color: yellow;
-  bottom: 12.5rem;
+  bottom: 8rem;
   height: 6rem;
   width: 100%;
 }
@@ -67,4 +53,29 @@
   line-height: 1.2em;
   text-align: center;
   width: 100%;
+}
+.kk {
+  display: none;
+}
+@media screen and (min-width: 50rem) {
+  .link {
+    margin: 3rem;
+    right: 0;
+    width: 60%;
+  }
+  .kk {
+    color: #FFF;
+    display: block;
+    font-family: 'Cabin';
+    font-size: 15rem;
+    left: -2rem;
+    position: absolute;
+    top: 7rem;
+  }
+  .footer-logo {
+    bottom: 4rem;
+    height: 3rem;
+  }
+  .footer footer {
+    font-size: 1.2rem;
 }
