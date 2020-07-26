@@ -1,45 +1,107 @@
 .logo-animation {
   background-color: yellow;
-  height: 8.3rem;
+  height: 7rem;
   position: relative;
-  top: 7.8rem;
+  top: 9rem;
   width: 100%;
 }
-.our-academy header {
+.left-academy-text {
   position: relative;
-  height: 45%;
+  height: 20rem;
 }
-.header-academy-text p {
+.left-academy-text p {
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-style: normal;
   font-weight: normal;
   line-height: 2rem;
-  padding: 0 3rem;
+  margin-top: 6rem;
+  padding: 0 5rem 0 3rem;
   position: relative;
   top: 10rem;
 }
-.our-academy main {
+.right-academy {
   background-color: #FFF;
-  height: 40%;
+  height: 27rem;
 }
-.our-academy main p {
+.right-academy p {
   color: #21252C;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.4em;
   font-style: normal;
   font-weight: normal;
-  line-height: 33px;
+  line-height: 2em;
   padding: 3rem 3rem 0 3rem;
 }
-#blue-button {
+.blue-button {
+  align-items: center;
   background-color: #21252C;
-  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
   float: right;
+  height: 8.3rem;
+  justify-content: center;
+  left: 15%;
   margin-right: 3.5rem;
   position: static;
+  top: 50rem;
+  width: 8.3rem;
+  z-index: 3;
 }
-#blue-button a {
+.blue-button a {
   color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  line-height: 1.8em;
+  text-decoration: none;
+}
+.our-academy .join-us {
+  display: none;
+}
+.kk {
+  display: none;
+}
+@media screen and (min-width: 70rem) {
+  .logo-animation {
+    height: 5rem;
+    top: 5rem;
+  }
+  .our-academy main {
+    background: #FFF;
+    display: flex;
+    margin-top: 5rem;
+  }
+  .left-academy-text {
+    background-color: #21252C;
+    height: 60rem;
+    margin-left: 3rem;
+    width: 25rem;
+  }
+  .left-academy-text p {
+    font-size: .8em;
+    margin: 0;
+    top: 5rem;
+  }
+  .right-academy {
+    width: 50%;
+    height: 30rem;
+  }
+  .right-academy p {
+    font-size: .8em;
+    margin-top: 15rem;
+    padding-right: 10rem;
+  }
+  .blue-button {
+    display: none;
+  }
+  .our-academy .join-us {
+    display: flex;
+    height: 6rem;
+    top: 17rem;
+    width: 6rem;
+  }
 }
