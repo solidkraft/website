@@ -14,3 +14,75 @@ section {
   width: 100%;
   position: relative;
 }
+
+
+
+
+
+html {
+  font-size: calc(.5em + 1vw);
+}
+html,
+body,
+section {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+header, footer {
+  max-width: 100vw;
+}
+body * + * {
+  padding: 0;
+}
+header,
+footer,
+section {
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFF;
+  color: rgba(0, 0, 0, .9);
+}
+.fixed-header {
+  position: fixed;
+  top: 3rem;
+  width: 100%;
+  z-index: 5;
+}
+.fixed-header a:first-child {
+  left: 3rem;
+  position: absolute;
+}
+.menu-icon {
+  right: 10%;
+  position: absolute;
+}
+.background {
+  height: 100%;
+  display: grid;
+  background-color: #292D33;
+  grid-auto-rows: 100%;
+  grid-gap: 3px;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+.background > div {
+  background-color: #21252C;
+  position: relative;
+}
+.desktop-background-div {
+  display: none;
+}
+@media screen and (min-width: 50rem) {
+  .background {
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  .desktop-background-div {
+    display: block;
+  }
+  .fixed-header {
+    display: none;
+  }
+}
