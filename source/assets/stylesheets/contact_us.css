@@ -5,7 +5,7 @@
   background-color: rgba(241, 241, 241, 0.5);
   height: 12rem;
   position: relative;
-  top: 8.6rem;
+  top: 8rem;
   width: 15.8rem;
 }
 .contact-us > header p {
@@ -16,11 +16,6 @@
   line-height: 1.2em;
   margin: 0 0 0 2rem;
   position: relative;
-  top: 1rem;
-}
-.contact-us main > div {
-  margin-top: 7rem;
-  width: 16rem;
 }
 .contact-us > main h1 {
   border-bottom: 5px solid #000;
@@ -30,7 +25,10 @@
   font-weight: normal;
   line-height: 1.2em;
   margin-left: 2rem;
+  margin-top: 7rem;
   padding-bottom: 0.5rem;
+  position: relative;
+  width: 16rem;
 }
 .form {
   display: flex;
@@ -60,4 +58,38 @@
   position: relative;
   left: 20rem;
   width: 5.8rem;
+}
+@media screen and (min-width: 50rem) {
+  .contact-us header > div {
+    height: 9rem;
+    top: 2rem;
+    text-align: center;
+    width: 37rem;
+  }
+  .contact-us > header p {
+    font-size: 2.5em;
+    padding: 0 5rem;
+    top: -5.5rem;
+  }
+  .contact-us > main h1 {
+    font-size: 1.8em;
+    position: absolute;
+    top: 5rem;
+    width: 12rem;
+  }
+  .form {
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 3rem;
+  }
+  .form input {
+    font-size: 1em;
+    margin: 2rem 2rem 0 0;
+  }
+  .project-about {
+    grid-column: 1 / span 2;
+  }
+  .form input:last-child {
+    grid-column: 2 / 2;
+  }
 }
