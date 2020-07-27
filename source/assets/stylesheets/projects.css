@@ -126,10 +126,6 @@
     width: 15rem;
     margin: 0rem;
   }
-  .circle-project > a > div:hover p {
-    color: #DE3C4B;
-    text-decoration: underline;
-  }
   .number {
     display: none;
   }
@@ -148,5 +144,9 @@
   }
   .projects .background {
     background-color: #21252C;
+  }
+  .active {
+    color: #DE3C4B!important;
+    text-decoration: underline;
   }
 }
