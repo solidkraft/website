@@ -1,54 +1,94 @@
 .services {
-  overflow-y: hidden;
+  display: flex;
+  max-height: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  white-space: nowrap;
-  width: 100%;
 }
-.services > section {
-  display: inline-block;
+.services .service-item {
+  height: 100%;
+  min-width: 100%;
   scroll-snap-align: center;
 }
-.services-slider {
+.principal-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.principal-item > h1 {
+  color: #FFF;
+  font-family: 'Cabin', sans-serif;
+  font-size: 7.5em;
+  font-weight: 500;
+  margin-bottom: 20rem;
+}
+.principal-item div {
+  align-items: center;
   background-color: #FFF;
-  height: 100%;
-  width: 100%;
-  position: relative;
+  border-radius: 50%;
+  color: #21252C;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  width: 11rem;
+  height: 11rem;
 }
-.slider-text {
-  margin-right: 3rem;
-  padding: 3rem;
-  white-space: normal;
+.principal-item a {
+  text-decoration: none;
 }
-.slider-text p {
+.white-background {
+  background-color: #FFF;
+}
+.service-item img {
+  background-color: white;
+  height: 20rem;
+  margin: 8rem 6rem;
+  width: 20rem;
+}
+.service-item h2 {
+  border-bottom: 3px solid #FFF;
+  color: #FFF;
+  font-family: 'Cabin';
+  font-size: 3em;
+  font-weight: 100;
+  margin: 3rem 12rem 1rem 3rem;
+}
+.service-item p {
+  color: #FFF;
   font-family: 'Cabin';
   font-size: 1.5em;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin: 0rem 3rem;
 }
-.slider-text p:first-child {
-  border-bottom: 2px solid #000;
-  font-family: 'Cabin';
-  margin-right: 10rem;
-  font-size: 2.2em;
-  font-style: normal;
-  font-weight: normal;
-  padding-bottom: 0.4rem;
+.white-background h2, .white-background p {
+  border-color: #000;
+  color: #000;
 }
-.blue-background {
-  background-color: #21252C;
-}
-.blue-background p {
-  color: #FFF!important;
-}
-.blue-background p:first-child {
-  border-color: white;
-}
-.image-animation {
-  background-color: yellow;
-  height: 50%;
-  margin: 3rem;
-}
-.hide {
-  visibility: hidden;
+@media screen and (min-width: 70rem) {
+  .services .service-item {
+    min-width: 50%;
+    scroll-snap-align: start;
+  }
+  .principal-item > h1 {
+    font-size: 6em;
+    margin-bottom: 3rem;
+  }
+  .principal-item a {
+    display: none;
+  }
+  .service-item img {
+    height: 10rem;
+    margin: 4rem 0rem 4rem 10rem;
+    width: 10rem;
+  }
+  .service-item h2 {
+    font-size: 1.9em;
+    margin: 8rem 22rem 1rem 3rem;
+  }
+  .service-item p {
+    font-size: 1.1em;
+    margin: 0rem 4.5rem 0 3rem;
+  }
 }
