@@ -48,9 +48,10 @@ body {
 .fixed-header a:first-child {
   left: 3rem;
   position: absolute;
+  top: .5rem;
 }
 .menu-icon {
-  right: 10%;
+  right: 3rem;
   position: absolute;
 }
 .background {
