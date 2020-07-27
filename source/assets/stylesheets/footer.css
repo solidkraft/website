@@ -7,7 +7,7 @@
 .link {
   display: flex;
   justify-content: space-between;
-  margin: 15rem 0;
+  margin: 12rem 0;
   width: 100%;
 }
 .explore ul, .social-media ul {
@@ -38,9 +38,22 @@
   line-height: 1.2em;
   margin: 3rem 1.5rem;
 }
+.social-media li a {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media img {
+  height: auto;
+  margin-right: .5rem;
+  width: 2rem;
+}
+.explore li {
+  margin: 2.7rem 0;
+}
 .footer-logo {
   background-color: yellow;
-  bottom: 8rem;
+  bottom: 12rem;
   height: 6rem;
   width: 100%;
 }
@@ -54,7 +67,7 @@
   text-align: center;
   width: 100%;
 }
-.kk {
+.sk-footer {
   display: none;
 }
 @media screen and (min-width: 50rem) {
@@ -63,17 +76,29 @@
     right: 0;
     width: 60%;
   }
-  .kk {
+  .footer {
+    background-color: #21252C;
+  }
+  .sk-footer {
     color: #FFF;
     display: block;
     font-family: 'Cabin';
-    font-size: 15rem;
-    left: -2rem;
+    font-size: 12rem;
+    left: 4rem;
     position: absolute;
     top: 7rem;
   }
+  .explore li {
+    margin: 1.5rem 0;
+  }
+  .social-media li {
+    margin: 1.7rem 0;
+  }
+  .social-media img {
+    width: auto;
+  }
   .footer-logo {
-    bottom: 4rem;
+    bottom: 5rem;
     height: 3rem;
   }
   .footer footer {
