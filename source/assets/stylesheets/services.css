@@ -20,7 +20,8 @@
   font-family: 'Cabin', sans-serif;
   font-size: 7.5em;
   font-weight: 500;
-  margin-bottom: 20rem;
+  position: relative;
+  top: 4rem;
 }
 .principal-item div {
   align-items: center;
@@ -29,9 +30,11 @@
   color: #21252C;
   display: flex;
   font-size: 2em;
-  justify-content: center;
-  width: 11rem;
   height: 11rem;
+  justify-content: center;
+  position: relative;
+  top: 7rem;
+  width: 11rem;
 }
 .principal-item a {
   text-decoration: none;
@@ -74,6 +77,7 @@
   .principal-item > h1 {
     font-size: 6em;
     margin-bottom: 3rem;
+    top: 0;
   }
   .principal-item a {
     display: none;
