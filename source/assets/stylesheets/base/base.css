@@ -14,11 +14,6 @@ section {
   width: 100%;
   position: relative;
 }
-
-
-
-
-
 html {
   font-size: calc(.5em + 1vw);
 }
