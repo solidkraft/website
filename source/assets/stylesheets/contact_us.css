@@ -61,7 +61,7 @@
   left: 20rem;
   width: 6rem;
 }
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 60rem) {
   .contact-us header > div {
     height: 9rem;
     top: 2rem;
@@ -95,6 +95,6 @@
   .form input:last-child {
     grid-column: 2 / 2;
     bottom: 1rem;
-    left: 17rem;
+    left: 73%;
   }
 }
