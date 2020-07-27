@@ -12,7 +12,7 @@
   flex-direction: row;
   height: 60%;
   justify-content: space-between;
-  margin-top: 10rem;
+  margin-top: 8rem;
   width: 100%;
 }
 .circle-project h1 {
@@ -52,31 +52,31 @@
   display: flex;
   flex-direction: row;
   margin-right: 3rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 .project-bar > div {
   background-color: #DE3C4B;
-  height: 17rem;
+  height: 15rem;
   margin-left: 0.5rem;
   width: 3.5rem;
 }
 .bar2 {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 .bar3 {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .bar4 {
-  margin-top: 9rem;
+  margin-top: 8rem;
 }
 .bar5 {
-  margin-top: 12rem;
+  margin-top: 11rem;
 }
 .projects-text {
   background-color: #FFF;
-  bottom: 8rem;
+  bottom: 7rem;
   right: 0;
-  width: 25rem;
+  width: 23rem;
 }
 .projects-text h1 {
   color: #000;
@@ -86,7 +86,7 @@
   font-weight: normal;
   line-height: 1.2;
   margin: 1.8rem 0 0 0;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 .projects-text p {
   color: #21252C;
@@ -96,7 +96,7 @@
   font-weight: normal;
   line-height: 1.8em;
   margin-right: 2rem;
-  padding: 1rem 2.3rem;
+  padding: .7rem 1rem;
 }
 .number-desktop {
   display: none;
@@ -143,5 +143,8 @@
   .projects-text {
     bottom: 3rem;
     right: 2rem;
+  }
+  .projects .background {
+    background-color: #21252C;
   }
 }
