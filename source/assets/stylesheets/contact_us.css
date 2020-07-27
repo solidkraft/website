@@ -25,7 +25,7 @@
   font-weight: normal;
   line-height: 1.2em;
   margin-left: 2rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
   padding-bottom: 0.5rem;
   position: relative;
   width: 16rem;
@@ -33,7 +33,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin: 2rem 4rem 2rem 2rem;
+  margin: 0rem 4rem 2rem 2rem;
   position: relative;
 }
 .form input {
@@ -44,22 +44,24 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1.2em;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+  outline: none;
   padding-bottom: 0.5rem;
 }
 .form input:last-child {
   background-color: #21252C;
   border: none;
   border-radius: 50%;
+  bottom: 1rem;
   color: white;
-  height: 5.8rem;
+  height: 6rem;
   padding-top: 0.5rem;
   cursor: pointer;
   position: relative;
   left: 20rem;
-  width: 5.8rem;
+  width: 6rem;
 }
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 55rem) {
   .contact-us header > div {
     height: 9rem;
     top: 2rem;
@@ -73,9 +75,10 @@
   }
   .contact-us > main h1 {
     font-size: 1.8em;
+    margin-left: 3rem;
     position: absolute;
-    top: 5rem;
-    width: 12rem;
+    top: 7rem;
+    width: 11rem;
   }
   .form {
     display: grid;
@@ -91,5 +94,7 @@
   }
   .form input:last-child {
     grid-column: 2 / 2;
+    bottom: 1rem;
+    left: 17rem;
   }
 }
