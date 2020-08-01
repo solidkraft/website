@@ -1,0 +1,75 @@
+.fixed-header {
+  background-color: pink;
+  position: fixed;
+  top: 3rem;
+  width: 100%;
+  z-index: 20;
+}
+.fixed-header a:first-child {
+  left: 3rem;
+  position: absolute;
+  top: .5rem;
+}
+.menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 3rem;
+}
+.mobile-menu {
+  background-color: #21252C;
+  height: 100%;
+  padding: 0;
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  z-index: 10;
+}
+.mobile-menu ol {
+  margin-top: 10rem;
+  counter-reset: order-list;
+}
+.mobile-menu ol li {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+}
+.mobile-menu ol li::before {
+  color: #FFF;
+  content: counter(order-list, decimal-leading-zero)".";
+  counter-increment: order-list;
+  font-family: 'Cabin';
+  font-size: 2em;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
+.mobile-menu ol li a {
+  color: #FFF;
+  font-family: 'Cabin';
+  font-size: 2.8em;
+  font-style: normal;
+  text-decoration: underline;
+}
+.mobile-menu ol li a:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.mobile-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 5rem 3.5rem;
+}
+.mobile-menu ul li {
+  margin-right: 2rem;
+}
+@media screen and (min-width: 50rem) {
+  .fixed-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
