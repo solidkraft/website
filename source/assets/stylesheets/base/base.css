@@ -39,21 +39,6 @@ body {
   background-color: #FFF;
   color: rgba(0, 0, 0, .9);
 }
-.fixed-header {
-  position: fixed;
-  top: 3rem;
-  width: 100%;
-  z-index: 5;
-}
-.fixed-header a:first-child {
-  left: 3rem;
-  position: absolute;
-  top: .5rem;
-}
-.menu-icon {
-  right: 3rem;
-  position: absolute;
-}
 .background {
   height: 100%;
   display: grid;
@@ -77,8 +62,5 @@ body {
   }
   .desktop-background-div {
     display: block;
-  }
-  .fixed-header {
-    display: none;
   }
 }
