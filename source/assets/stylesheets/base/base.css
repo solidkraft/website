@@ -1,6 +1,5 @@
 html, body {
   background-color: #21252C;
-  box-sizing: border-box;
   height: 100%;
   margin: 0;
   overflow y: scroll;
@@ -14,17 +13,11 @@ section {
   width: 100%;
   position: relative;
 }
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: calc(.5em + 1vw);
-}
-html,
-body,
-section {
-  min-height: 100vh;
-  max-width: 100vw;
-}
-header, footer {
-  max-width: 100vw;
 }
 body * + * {
   padding: 0;
@@ -46,7 +39,6 @@ body {
   grid-auto-rows: 100%;
   grid-gap: 3px;
   grid-template-columns: 1fr 2fr 1fr;
-  position: relative;
   z-index: 1;
 }
 .background > div {
@@ -62,5 +54,11 @@ body {
   }
   .desktop-background-div {
     display: block;
+  }
+  .menu-fixed {
+    box-shadow: 0 4px 3px rgba(0,0,0,.5);
+    position: fixed!important;
+    top: 0;
+    z-index: 1000;
   }
 }
