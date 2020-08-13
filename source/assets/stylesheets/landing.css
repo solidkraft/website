@@ -134,4 +134,13 @@
     color: #FFF;
     font-size: 1.3em;
   }
+  .menu-fixed-blue {
+    background-color: #21252C;
+  }
+  .menu-fixed-blue div {
+    background-color: #21252C;
+  }
+  .menu-fixed-blue a {
+    color: #FFF;
+  }
 }
