@@ -31,3 +31,16 @@ $(document).ready(function() {
     counter = 1;
   })
 })
+
+
+$(document).ready(function(){
+  var height = $('.button-footer').offset().top;
+
+  $(window).on('scroll', function(){
+    if ( $(window).scrollTop() > height ){
+      $('.button-footer').addClass('menu-fixed');
+    }else{
+      $('.button-footer').removeClass('menu-fixed');
+    }
+  });
+});
